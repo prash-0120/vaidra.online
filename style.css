@@ -1,290 +1,61 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* style.css - Vaidra.Online Premium Website */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* === Global Styles === */
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(145deg, #0a0a0a, #111111);
-  color: #ffffff;
-  line-height: 1.6;
-  transition: background 0.3s, color 0.3s;
-  scroll-behavior: smooth;
-}
+{ margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; font-family: 'Poppins', sans-serif; }
 
-body.light {
-  background: #f0f0f0;
-  color: #111;
-}
 
-/* Header */
-header.header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(12px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  border-bottom: 1px solid #222;
-}
+body { background: rgba(15, 15, 15, 0.9); color: #fff; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); line-height: 1.6; padding-top: 70px; }
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #00ffff;
-}
+section { padding: 60px 20px; max-width: 1000px; margin: auto; text-align: center; }
 
-.logo span {
-  color: #0077ff;
-}
+h1, h2, h3 { margin-bottom: 20px; color: #00f0ff; text-shadow: 0 0 8px #00f0ff; }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
+p { margin-bottom: 15px; }
 
-nav a, nav button {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  background: none;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
+/* === Header === */ .header { position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 10px 30px; background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(8px); z-index: 1000; border-bottom: 1px solid #444; }
 
-nav a:hover, nav button:hover {
-  color: #00f0ff;
-}
+.logo { font-size: 24px; font-weight: bold; color: #00f0ff; }
 
-/* Sections */
-section {
-  padding: 80px 10%;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.6s ease-out;
-}
+.logo span { color: #fff; }
 
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+nav ul { display: flex; gap: 20px; list-style: none; }
 
-h1, h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #00f0ff;
-  text-shadow: 0 0 6px #00f0ff55;
-}
+nav ul li a { text-decoration: none; color: #fff; transition: 0.3s; padding: 5px 10px; }
 
-.hero {
-  text-align: center;
-  padding: 100px 10% 80px;
-}
+nav ul li a:hover { color: #00f0ff; text-shadow: 0 0 5px #00f0ff; }
 
-.hero h1 {
-  font-size: 3rem;
-}
+/* === Hero Section === */ .hero { background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,255,255,0.2)); border-radius: 15px; padding: 80px 20px; margin-top: 20px; }
 
-.hero p {
-  font-size: 1.2rem;
-  color: #ccc;
-  margin-top: 10px;
-}
+.btn { background: #00f0ff; color: #000; padding: 10px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 0 10px #00f0ff; transition: 0.3s ease; display: inline-block; }
 
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 30px;
-  background: linear-gradient(45deg, #00ffff, #0077ff);
-  color: #000;
-  border-radius: 40px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
+.btn:hover { background: #00c0ff; color: #fff; box-shadow: 0 0 15px #00f0ff; }
 
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #00f0ff;
-}
+/* === Cards === */ .service-box, .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
 
-/* Services */
-.service-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
+.card, .project { background: rgba(255,255,255,0.05); border-radius: 15px; padding: 20px; box-shadow: 0 0 10px rgba(0,255,255,0.2); transition: 0.3s ease; }
 
-.card {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 30px;
-  border-radius: 20px;
-  text-align: center;
-  transition: all 0.3s ease;
-  border: 1px solid #1a1a1a;
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.05);
-}
+.card:hover, .project:hover { box-shadow: 0 0 20px rgba(0,255,255,0.4); }
 
-.card h3 {
-  color: #00eaff;
-  margin-bottom: 15px;
-}
+.cta-center { margin-top: 30px; }
 
-.card p {
-  color: #ccc;
-}
+/* === About / Contact / Footer === */ textarea, input[type="text"], input[type="email"] { width: 100%; padding: 10px; border-radius: 10px; border: none; margin-bottom: 15px; background: rgba(255, 255, 255, 0.1); color: white; }
 
-.cta-center {
-  text-align: center;
-  margin-top: 40px;
-}
+button[type="submit"] { background: #00f0ff; color: black; font-weight: bold; padding: 10px 30px; border-radius: 30px; border: none; cursor: pointer; transition: 0.3s; box-shadow: 0 0 10px #00f0ff; }
 
-.cta-center .btn {
-  font-size: 1.1rem;
-  padding: 16px 36px;
-  border-radius: 50px;
-}
+button[type="submit"]:hover { background: #00c0ff; color: white; }
 
-/* Why Us */
-.why ul {
-  max-width: 700px;
-  margin: auto;
-  list-style: none;
-  padding: 0;
-}
+.footer { text-align: center; padding: 20px; background: rgba(0,0,0,0.5); backdrop-filter: blur(6px); margin-top: 50px; }
 
-.why li {
-  background: rgba(255, 255, 255, 0.05);
-  margin: 12px 0;
-  padding: 12px 20px;
-  border-radius: 10px;
-  text-align: center;
-}
+/* === Scroll To Top Button === */ #scrollTopBtn { position: fixed; bottom: 20px; right: 20px; background: #00f0ff; color: black; border: none; padding: 10px 15px; border-radius: 50%; box-shadow: 0 0 10px #00f0ff; cursor: pointer; display: none; }
 
-/* Portfolio */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
+/* === WhatsApp Floating === */ .whatsapp-float { position: fixed; bottom: 80px; right: 20px; background: #00f0ff; color: black; font-size: 24px; padding: 12px; border-radius: 50%; text-decoration: none; box-shadow: 0 0 10px #00f0ff; }
 
-.project {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 25px;
-  border-radius: 16px;
-  transition: all 0.3s ease;
-  border: 1px solid #1a1a1a;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.08);
-}
+/* === Responsive Fix for Navigation === */ @media (max-width: 768px) { nav ul { flex-direction: column; align-items: center; padding: 10px 0; flex-wrap: wrap; overflow-x: hidden; }
 
-.project h3 {
-  color: #00d6ff;
-  margin-bottom: 10px;
-}
+nav ul li { margin: 10px 0; }
 
-/* About */
-.about p {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-  color: #ccc;
-}
+.header nav { width: 100%; }
 
-/* Contact */
-.contact a {
-  color: #00f0ff;
-  text-decoration: none;
-}
+.logo { font-size: 1.5rem; } }
 
-.contact form {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin-inline: auto;
-}
-
-.contact input,
-.contact textarea {
-  padding: 12px 16px;
-  border: none;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
-}
-
-.contact button {
-  background: linear-gradient(45deg, #00ffff, #0077ff);
-  color: #000;
-  padding: 12px;
-  font-weight: bold;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.contact button:hover {
-  box-shadow: 0 0 10px #00f0ff;
-  transform: scale(1.05);
-}
-
-/* Footer */
-footer.footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.4);
-  font-size: 0.9rem;
-  border-top: 1px solid #111;
-  color: #888;
-}
-
-/* Scroll to top */
-#scrollTopBtn {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  padding: 10px 14px;
-  font-size: 18px;
-  background: #00ffff;
-  color: #000;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #00f0ff;
-  cursor: pointer;
-  display: none;
-  z-index: 999;
-}
-
-/* WhatsApp Floating Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  left: 25px;
-  background-color: #25D366;
-  color: white;
-  font-size: 20px;
-  padding: 12px 16px;
-  border-radius: 50%;
-  text-decoration: none;
-  box-shadow: 0 0 12px rgba(0, 255, 0, 0.5);
-  z-index: 999;
-  transition: transform 0.3s;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
