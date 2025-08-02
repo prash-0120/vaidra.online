@@ -1,96 +1,115 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Premium website design for startups and businesses. Contact Vaidra.Online today.">
-  <meta name="keywords" content="web design, India, portfolio, custom html, Vaidra.Online, SEO, Pravin Kamble">
-  <meta name="author" content="Pravin Kamble">
-  <title>Vaidra.Online</title>
-  <link rel="stylesheet" href="style.css">
-</head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Vaidra.Online - Premium web design services for startups, businesses, and creatives."/>
+  <title>Vaidra.Online - Web Design Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
   <header class="header">
     <div class="logo">Vaidra<span>.Online</span></div>
-    <nav>
+
+    <!-- Hamburger Button -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- Nav Menu -->
+    <nav id="navbar">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#why">Why Us</a></li>
+        <li><a href="#why">Why Choose Us</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button id="themeToggle">🌓</button></li>
       </ul>
     </nav>
-  </header>  <section id="home" class="hero animate">
-    <h1>Web Design for Visionaries</h1>
-    <p>Build modern websites that grow your brand — fast, responsive & beautiful.</p>
-    <a href="#contact" class="btn">Start Your Project</a>
-  </section>  <section id="services" class="services animate">
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Crafting Premium Websites That Convert</h1>
+    <p>We design elegant and modern websites that help your brand grow online.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
     <h2>Our Services</h2>
     <div class="service-box">
       <div class="card">
         <h3>Website for Startups</h3>
-        <p>Affordable, fast websites for new businesses with modern design and mobile optimization to help you launch quickly.</p>
+        <p>Custom websites designed to launch your startup the right way.</p>
       </div>
       <div class="card">
         <h3>Company Portfolio Sites</h3>
-        <p>Elegant websites to showcase your services, team, projects, and client testimonials. Perfect for freelancers & companies.</p>
+        <p>Professional websites to showcase your company and achievements.</p>
       </div>
       <div class="card">
-        <h3>Custom HTML/CSS/JS Builds</h3>
-        <p>We code unique, fast, and secure websites with real HTML/CSS/JS – no WordPress. Perfect for customized requirements.</p>
+        <h3>HTML/CSS/JS Builds</h3>
+        <p>Purely coded websites built for speed, control, and design flexibility.</p>
       </div>
       <div class="card">
         <h3>Hosting & SEO Setup</h3>
-        <p>We'll help launch your site online with hosting (Netlify/GitHub) and set up SEO so you're searchable on Google.</p>
+        <p>Launch with the right tools: hosting, SEO, and Google indexing.</p>
       </div>
     </div>
     <div class="cta-center">
-      <a class="btn" target="_blank" href="https://wa.me/918983248953?text=Hi%2C%20I%20visited%20your%20website%20(Vaidra.Online)%20and%20I'm%20interested%20in%20your%20services.">Get Started on WhatsApp</a>
+      <a href="https://wa.me/8983248953?text=Hello! I came from your website (vaidra.online) and I'm interested in your web design services." class="btn" target="_blank">Get on WhatsApp</a>
     </div>
-  </section>  <section id="why" class="why animate">
-    <h2>Why Choose Us</h2>
-    <ul>
-      <li>Clean & modern designs</li>
-      <li>Mobile-friendly & responsive</li>
-      <li>SEO optimized code</li>
-      <li>Fast delivery and support</li>
-    </ul>
-  </section>  <section id="portfolio" class="portfolio animate">
-    <h2>Portfolio</h2>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why">
+    <h2>Why Choose Vaidra?</h2>
+    <p>✔️ Premium UI/UX Designs<br/>✔️ Custom-Built Code<br/>✔️ SEO-Ready & Fast<br/>✔️ Clean, Secure, Responsive</p>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>Recent Projects</h2>
     <div class="portfolio-grid">
-      <div class="project">
-        <h3>Personal Portfolio</h3>
-        <p>A clean, fast-loading one-page site built with custom HTML/CSS/JS for a freelance designer.</p>
-      </div>
-      <div class="project">
-        <h3>Startup Website</h3>
-        <p>Landing page for a tech startup, including product sections, CTA, testimonials, and smooth scroll navigation.</p>
-      </div>
-      <div class="project">
-        <h3>Company Showcase</h3>
-        <p>Multi-section site for a small business to showcase services, about, gallery, and contact with integrated SEO.</p>
-      </div>
+      <div class="project"><h3>Project 1</h3><p>Startup site with full SEO setup</p></div>
+      <div class="project"><h3>Project 2</h3><p>Portfolio site with scroll animations</p></div>
+      <div class="project"><h3>Project 3</h3><p>Mobile-friendly e-commerce UI</p></div>
     </div>
-  </section>  <section id="about" class="about animate">
+  </section>
+
+  <!-- About -->
+  <section id="about">
     <h2>About Us</h2>
-    <p>We are a passionate team delivering creative and performance-driven websites. We focus on clean design, user experience, and fast loading. Vaidra.Online is founded and led by <strong style="color: #00f0ff; text-shadow: 0 0 8px #00f0ff;">Pravin Kamble</strong>, a dedicated web designer & developer from India.</p>
-  </section>  <section id="contact" class="contact animate">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:vaidraonline@gmail.com">vaidraonline@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/vaidra.online" target="_blank">@vaidra.online</a></p>
-    <p>Phone: <a href="tel:+918983248953">+91 8983248953</a></p>
+    <p>Founded by <strong>Pravin Kamble</strong>, Vaidra.Online is focused on creating high-quality, responsive websites that help clients stand out.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
     <form action="https://formspree.io/f/manbdqdb" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://vaidra.online/thankyou.html">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-  </section>  <footer class="footer">
-    <p>&copy; 2025 Vaidra.Online. All rights reserved.</p>
-  </footer>  <!-- Scroll to Top Button --><button id="scrollTopBtn" title="Go to top">⬆</button>
+    <div class="cta-center">
+      <a href="https://wa.me/8983248953?text=Hello! I came from your website (vaidra.online) and I'm interested in your web design services." class="btn" target="_blank">Chat on WhatsApp</a>
+    </div>
+  </section>
 
-  <!-- WhatsApp Floating Button --><a href="https://wa.me/918983248953?text=Hi%2C%20I%20visited%20your%20website%20(Vaidra.Online)%20and%20I'm%20interested%20in%20your%20services." class="whatsapp-float" target="_blank">💬</a>
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/8983248953?text=Hi, I'm interested in getting a website designed." class="whatsapp-float" target="_blank">💬</a>
 
-  <script src="script.js"></script></body></html>
+  <!-- Scroll To Top Button -->
+  <button onclick="scrollToTop()" id="scrollTopBtn">↑</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Vaidra.Online. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
